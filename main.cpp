@@ -12,6 +12,7 @@ namespace example1 {
     void example() {
         //pointers basic 1
         //TODO 1 - create var1 of type int
+
         //TODO 1 - create a character array var2 that can hold 10 elements
 
 
