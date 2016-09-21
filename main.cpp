@@ -18,10 +18,10 @@ namespace example1 {
 
         //TODO 1
         cout << "Size of var1 variable: ";
-        cout << "4 bytes" << endl;
+        cout << sizeof(var1) << endl;
         //TODO 1
         cout << "Size of var2 variable: ";
-        cout << "10 elements" << endl;
+        cout << sizeof(var2) << endl;
         //TODO 1
         cout << "Address of var1 variable: ";
         cout << &var1 << endl;
