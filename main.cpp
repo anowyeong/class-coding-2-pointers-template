@@ -37,25 +37,26 @@ namespace example2 {
     void example() {
         //pointers basic 2
         //TODO 2 - create a integer variable var holding some value
+        int i = 1;
         //TODO 2 - create a pointer of type int
-
+        int *ip;
         //TODO 2 - store address of var into pointer
-
+        ip = & i;
         //TODO 2
-        cout << "Value of var variable: ";
+        cout << "Value of var variable: " << i <<endl;
 
         //TODO 2 // print the address stored in ip pointer variable
-        cout << "Address stored in ip variable: ";
+        cout << "Address stored in ip variable: " << ip <<endl;
 
         //TODO 2// access the value at the address available in pointer
-        cout << "Value of *ip variable: ";
+        cout << "Value of *ip variable: " << *ip<<endl;
 
         //TODO 2
-        cout << "Address of *ip variable: ";
+        cout << "Address of *ip variable: " << & ip <<endl;
 
         //TODO 2 - set the pointer to null pointer
-
-        cout << "The value of ptr is ";
+        ip = nullptr;
+        cout << "The value of ptr is "<< ip<< endl;
     }
 }
 
@@ -88,18 +89,21 @@ namespace example4 {
 
         //TODO 4 - integer array of size MAX
         //TODO 4 - integer pointer
+        int var[MAX] = {10, 11, 12};
+        int *ptr;
 
         //TODO 4// let us have address of the last element in pointer.
-
+		ptr = &var[MAX - 1];
         for (int i = MAX; i > 0; i--) {
             //TODO 4
             cout << "Address of var[" << i << "] = ";
-
+			cout << ptr << endl;
             //TODO 4
             cout << "Value of var[" << i << "] = ";
-
+			cout << *ptr << endl;
             //TODO 4
             // point to the previous location
+            ptr--;
         }
     }
 }
