@@ -88,18 +88,21 @@ namespace example4 {
 
         //TODO 4 - integer array of size MAX
         //TODO 4 - integer pointer
+        int var[MAX] = {10, 11, 12};
+        int *ptr;
 
         //TODO 4// let us have address of the last element in pointer.
-
+		ptr = &var[MAX - 1];
         for (int i = MAX; i > 0; i--) {
             //TODO 4
             cout << "Address of var[" << i << "] = ";
-
+			cout << ptr << endl;
             //TODO 4
             cout << "Value of var[" << i << "] = ";
-
+			cout << *ptr << endl;
             //TODO 4
             // point to the previous location
+            ptr--;
         }
     }
 }
