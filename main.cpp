@@ -92,14 +92,14 @@ namespace example4 {
         int *ptr;
 
         //TODO 4// let us have address of the last element in pointer.
-		ptr = &var[MAX - 1];
+        ptr = &var[MAX - 1];
         for (int i = MAX; i > 0; i--) {
             //TODO 4
             cout << "Address of var[" << i << "] = ";
-			cout << ptr << endl;
+	    cout << ptr << endl;
             //TODO 4
             cout << "Value of var[" << i << "] = ";
-			cout << *ptr << endl;
+	    cout << *ptr << endl;
             //TODO 4
             // point to the previous location
             ptr--;
