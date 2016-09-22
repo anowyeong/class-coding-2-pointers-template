@@ -93,6 +93,7 @@ namespace example4 {
         int *ptr;
 
         //TODO 4// let us have address of the last element in pointer.
+<<<<<<< HEAD
 		ptr = &var[MAX - 1];
         for (int i = MAX; i > 0; i--) {
             //TODO 4
@@ -101,6 +102,16 @@ namespace example4 {
             //TODO 4
             cout << "Value of var[" << i << "] = ";
 			cout << *ptr << endl;
+=======
+        ptr = &var[MAX - 1];
+        for (int i = MAX; i > 0; i--) {
+            //TODO 4
+            cout << "Address of var[" << i << "] = ";
+	    cout << ptr << endl;
+            //TODO 4
+            cout << "Value of var[" << i << "] = ";
+	    cout << *ptr << endl;
+>>>>>>> cf7044681b3bff5645884ddc12d6273d4bf83b74
             //TODO 4
             // point to the previous location
             ptr--;
@@ -198,7 +209,7 @@ namespace example10 {
         int var;
         int *ptr;
         //TODO 10 - create a pointer to pointer
-
+    int **pptr;
 
         var = 3000;
 
@@ -206,12 +217,12 @@ namespace example10 {
         ptr = &var;
 
         //TODO 10// take the address of ptr using address of operator &
-
+        pptr = &ptr;
         // take the value using pptr
         cout << "Value of var :" << var << endl;
         cout << "Value available at *ptr :" << *ptr << endl;
         //TODO 10
-        cout << "Value available at **pptr :";
+        cout << "Value available at **pptr :"<< **pptr<<end;
 
     }
 }
