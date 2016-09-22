@@ -197,7 +197,7 @@ namespace example10 {
         int var;
         int *ptr;
         //TODO 10 - create a pointer to pointer
-
+    int **pptr;
 
         var = 3000;
 
@@ -205,12 +205,12 @@ namespace example10 {
         ptr = &var;
 
         //TODO 10// take the address of ptr using address of operator &
-
+        pptr = &ptr;
         // take the value using pptr
         cout << "Value of var :" << var << endl;
         cout << "Value available at *ptr :" << *ptr << endl;
         //TODO 10
-        cout << "Value available at **pptr :";
+        cout << "Value available at **pptr :"<< **pptr<<end;
 
     }
 }
