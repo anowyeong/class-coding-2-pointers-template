@@ -185,7 +185,7 @@ void example() {
   for (int i = 0; i < MAX; i++) {
     //TODO 8
 
-    cout << "Value of var[" << i << "] = "<< **pt;
+    cout << "Value of var[" << i << "] = "<< **pt<<endl;
   }
 }
 }
